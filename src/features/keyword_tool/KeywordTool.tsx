@@ -60,8 +60,8 @@ function KeywordTool(props: WidthAndHeight) {
     // }
     // eslint-disable-next-line
     if (numberOfPixelToMove != 0) {
-      updateS1Props({...propsS1, width: numberOfPixelToMove});
-      updateS2Props({...propsS2, width: (props.width - LEFT_NAV_WIDTH) / 2 - 8 - numberOfPixelToMove});
+      updateS1Props({...propsS1, width: numberOfPixelToMove - 50});
+      updateS2Props({...propsS2, width: (props.width - LEFT_NAV_WIDTH) / 2 + 42 - numberOfPixelToMove});
     }
   }
 
