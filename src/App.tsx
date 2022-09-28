@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import KeywordTool from './features/keyword_tool/KeywordTool';
-import { WidthAndHeight } from './services/interfaces';
+// import { WidthAndHeight } from './services/interfaces';
 
 function App() {
 

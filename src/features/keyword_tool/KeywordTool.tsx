@@ -2,11 +2,11 @@ import { WidthAndHeight } from '../../services/interfaces';
 import TopBar from './layouts/TopBar';
 import LeftNav from '../../layouts/LeftNav';
 import S1 from './components/S1';
-
+// eslint-disable-next-line
 import { useEffect, useRef, useState } from 'react';
 import S2 from './components/S2';
 import S3 from './components/S3';
-import S3Filter from './components/S3Filter';
+// import S3Filter from './components/S3Filter';
 import ResizerHorizontal, { ResizerHorizontalProps } from '../../components/Resizer';
 
 
@@ -40,7 +40,7 @@ function KeywordTool(props: WidthAndHeight) {
     width: ((props.width - LEFT_NAV_WIDTH) / 4),      // initial values -> shall be updated via callback resizerHorizontalS1ToS2XChange
     height: props.height - TOP_BAR_HEIGHT             // initial values
   }); 
-  
+  // eslint-disable-next-line
   const [s3Width, setS3Width] = useState<number>((props.width - LEFT_NAV_WIDTH) / 4);
   // const [s3FilterWidth, setS3FilterWidth] = useState<number>((props.width - LEFT_NAV_WIDTH) / 4);
   const propsS3: WidthAndHeight = {
@@ -58,6 +58,7 @@ function KeywordTool(props: WidthAndHeight) {
     //   updateS1Props({...propsS1, width: propsS1.width + numberOfPixelToMove})
     //   updateS2Props({...propsS2, width: propsS2.width - numberOfPixelToMove})
     // }
+    // eslint-disable-next-line
     if (numberOfPixelToMove != 0) {
       updateS1Props({...propsS1, width: numberOfPixelToMove});
       updateS2Props({...propsS2, width: (props.width - LEFT_NAV_WIDTH) / 2 - 8 - numberOfPixelToMove});

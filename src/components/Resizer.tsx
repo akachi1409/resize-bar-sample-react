@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useContext, useState, useEffect, useRef } from "react";
 
 export interface ResizerHorizontalProps {
@@ -41,6 +42,7 @@ function ResizerHorizontal(props: ResizerHorizontalProps) {
 
   const resizeHorizontally = (event: MouseEvent) => {
     //console.log(event)
+    // eslint-disable-next-line
     if (clientX.current == -1) {
       // console.log("clientX: " +  clientX.current + "|" + event.clientX)
       // console.log("event.clientX: " + event.clientX)
